@@ -1,0 +1,37 @@
+{
+  "name": "consolify",
+  "version": "1.0.0",
+  "description": "Customisable multi-use console",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "dev": "nodemon -r tsconfig-paths/register --exec ts-node --transpile-only --files src/index.ts",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethan-davies/consolify.git"
+  },
+  "keywords": [
+    "cli",
+    "console"
+  ],
+  "author": "Ethan Davies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ethan-davies/consolify/issues"
+  },
+  "homepage": "https://github.com/ethan-davies/consolify#readme",
+  "devDependencies": {
+    "@types/node": "^20.8.5",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "chalk": "4.1.0",
+    "nodemon": "^3.0.1",
+    "prompt": "^1.3.0"
+  }
+}
